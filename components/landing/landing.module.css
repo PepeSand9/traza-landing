@@ -2341,15 +2341,83 @@
     grid-template-columns: 1fr;
     gap: 20px;
     text-align: center;
+    padding-inline: 8px;
   }
 
   .dataSlideChart {
     min-height: 140px;
+    width: 100%;
+  }
+
+  .dataSlideCopy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dataSlideLabel {
+    text-align: center;
+  }
+
+  .dataSlideValue {
+    text-align: center;
+    width: 100%;
   }
 
   .dataSlideDetail {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
+  }
+
+  .chartStarsRating,
+  .chartStarsRatingInset {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+    max-width: none;
+    width: auto;
+  }
+
+  .chartStarsRow {
+    justify-content: center;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .chartStarWrap {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .chartStarsScore {
+    text-align: center;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+
+  .dataSlideChart:has(.chartStarsRating) {
+    min-height: 168px;
+  }
+
+  .dataSlideValuePerdidos {
+    align-items: center;
+    width: 100%;
+  }
+
+  .dataSlideHasta {
+    text-align: center;
+    width: 100%;
+  }
+
+  .dataSlideValuePerdidosMain {
+    justify-content: center;
+    width: 100%;
   }
 
   .dataCarouselFooter {
